@@ -1,0 +1,18 @@
+# this function takes a user input for the rows in a pyramid and then prints the pyramid
+def print_pyramid(height):
+    for x in range(1,height+1):
+        print(" " * (height - x) + "#" * x + "  " + "#" * x) 
+        
+def main():
+    while True:
+        try:
+            height = int(input("Height: "))
+            if 1 <= height <= 8:
+                break
+            else:
+                print("Please enter a number between 1 and 8.")
+        except ValueError:
+            print("Please enter a valid integer.")
+    print_pyramid(height)
+if __name__ == "__main__":
+    main()
