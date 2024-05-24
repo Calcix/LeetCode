@@ -1,4 +1,11 @@
-# this function takes a user input for the rows in a pyramid and then prints the pyramid
+'''
+This function takes a user input for the height of a pyramid and then prints the pyramid. This is what a pyramid with a height of 4 should look like:
+   #  #
+  ##  ##
+ ###  ###
+####  ####
+'''
+
 def print_pyramid(height):
     for x in range(1,height+1):
         print(" " * (height - x) + "#" * x + "  " + "#" * x) 
